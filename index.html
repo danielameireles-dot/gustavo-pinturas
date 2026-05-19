@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo Pinturas</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background:#f8f8f8; color:#333; line-height:1.6; }
+    header {
+      background: linear-gradient(135deg, #0f172a, #2563eb);
+      color:white; text-align:center; padding:80px 20px;
+    }
+    header h1 { font-size: 3rem; margin-bottom:10px; }
+    nav {
+      background:#fff; padding:15px; text-align:center;
+      box-shadow:0 2px 8px rgba(0,0,0,.08);
+      position:sticky; top:0;
+    }
+    nav a {
+      text-decoration:none; color:#1e3a8a; margin:0 15px; font-weight:bold;
+    }
+    section { max-width:1100px; margin:auto; padding:60px 20px; }
+    h2 { text-align:center; margin-bottom:30px; color:#1e3a8a; font-size:2rem; }
+    .sobre { display:flex; flex-wrap:wrap; gap:30px; align-items:center; }
+    .sobre img {
+      width:100%; max-width:420px; border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,.15);
+    }
+    .sobre-texto { flex:1; font-size:1.1rem; }
+    .servicos {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;
+    }
+    .card {
+      background:#fff; padding:25px; border-radius:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+    .galeria {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;
+    }
+    .galeria img {
+      width:100%; border-radius:15px; box-shadow:0 6px 18px rgba(0,0,0,.1);
+    }
+    .contato {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color:white; text-align:center; padding:50px 20px; border-radius:20px;
+    }
+    .botao {
+      display:inline-block; margin-top:20px; background:#25d366; color:#fff;
+      padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold;
+    }
+    footer {
+      background:#111827; color:#d1d5db; text-align:center; padding:20px; margin-top:40px;
+    }
+    @media (max-width:768px) {
+      header h1 { font-size:2.2rem; }
+      nav a { display:inline-block; margin:8px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎨 Gustavo Pinturas</h1>
+    <p>Pintura residencial e comercial com qualidade, capricho e compromisso.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre o Gustavo</h2>
+    <div class="sobre">
+      <img src="foto1.jpeg" alt="Trabalho do Gustavo">
+      <div class="sobre-texto">
+        <p>
+          Gustavo é pintor profissional e realiza serviços com muito capricho,
+          pontualidade e atenção aos detalhes. Trabalha com pintura residencial,
+          comercial, texturas e retoques.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="servicos">
+      <div class="card"><h3>🏠 Pintura Residencial</h3><p>Casas e apartamentos.</p></div>
+      <div class="card"><h3>🏢 Pintura Comercial</h3><p>Lojas e empresas.</p></div>
+      <div class="card"><h3>🎨 Texturas</h3><p>Acabamentos especiais.</p></div>
+      <div class="card"><h3>🛠️ Reformas</h3><p>Retoques e revitalização.</p></div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Trabalhos Realizados</h2>
+    <div class="galeria">
+      <img src="foto1.jpeg" alt="Trabalho 1">
+      <img src="foto2.jpeg" alt="Trabalho 2">
+      <img src="foto3.jpeg" alt="Trabalho 3">
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="contato">
+      <h2>Solicite um Orçamento</h2>
+      <p>Fale diretamente com o Gustavo pelo WhatsApp.</p>
+      <a class="botao" href="https://wa.me/595991890360" target="_blank">📱 Chamar no WhatsApp</a>
+      <p style="margin-top:15px;">📞 +595 991 890360</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Gustavo Pinturas - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
